@@ -22,18 +22,17 @@ End the program.
 #To write a python program for reading content from a CSV file.
 #Developed by: SANDHIYA P
 #Register Number: 212223230183
+with open("text1.txt","r") as fp:
+msg1=fp.read()
+with open("copytext.txt","w") as fp1:
+fp1.write(msg1)
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+
 ``` 
 
 ### OUTPUT:
-
-![alt text](image.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
